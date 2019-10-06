@@ -7,12 +7,13 @@ class Todo
   DONE_MARKER = 'X'
   UNDONE_MARKER = ' '
 
-  attr_accessor :title, :description, :done
+  attr_accessor :title, :description, :done, :due_date
 
   def initialize(title, description='')
     @title = title
     @description = description
     @done = false
+    @due_date = nil
   end
 
   def done!
